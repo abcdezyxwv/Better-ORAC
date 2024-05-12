@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Better ORAC",
+  "version": "1.0",
+  "description": "Replaces specific text in HTML code on https://orac2.info/",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://orac2.info/*"],
+      "js": ["content.js"]
+    }
+  ],
+	"action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
+
